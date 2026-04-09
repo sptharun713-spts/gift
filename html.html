@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Cartoon Adventure 🎂</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<!-- =========================
+     SCREEN 1 - START SCREEN
+     ========================= -->
+<div id="screen1" class="screen active">
+  <h1 class="title">🎀 Happy Birthday Her Name 🎀</h1>
+  <p>Welcome to your cartoon quiz adventure! 😄</p>
+  <button id="startBtn">Start 🎮</button>
+</div>
+
+<!-- =========================
+     SCREEN 2 - QUESTION 1
+     ========================= -->
+<div id="screen2" class="screen">
+  <h2>😂 Question 1</h2>
+  <p>Who loves eating all the time?</p>
+  <!-- Moving GIF -->
+  <div class="moving-gif"><img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Shinchan Eating"></div>
+  <!-- Answer buttons -->
+  <button class="wrong">Pikachu ⚡</button>
+  <button class="right" data-character="shinchan">Shinchan 🍑</button>
+  <button class="wrong">SpongeBob 🍔</button>
+</div>
+
+<!-- =========================
+     SCREEN 3 - FUN FACT AFTER Q1
+     ========================= -->
+<div id="screen3" class="screen">
+  <h2>🧠 Fun Fact!</h2>
+  <p>Shinchan is famous for being super naughty and funny 😂</p>
+  <button class="next">Next ➡️</button>
+</div>
+
+<!-- =========================
+     SCREEN 4 - QUESTION 2
+     ========================= -->
+<div id="screen4" class="screen">
+  <h2>😂 Question 2</h2>
+  <p>Who lives in a pineapple under the sea?</p>
+  <div class="moving-gif"><img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="SpongeBob"></div>
+  <button class="right" data-character="spongebob">SpongeBob 🍍</button>
+  <button class="wrong">Pikachu ⚡</button>
+  <button class="wrong">Shinchan 🍑</button>
+</div>
+
+<!-- =========================
+     SCREEN 5 - FUN FACT AFTER Q2
+     ========================= -->
+<div id="screen5" class="screen">
+  <h2>🧠 Fun Fact!</h2>
+  <p>SpongeBob works at the Krusty Krab 🍔 and loves jellyfishing!</p>
+  <button class="next">Next ➡️</button>
+</div>
+
+<!-- =========================
+     SCREEN 6 - QUESTION 3
+     ========================= -->
+<div id="screen6" class="screen">
+  <h2>😂 Question 3</h2>
+  <p>Who shoots electricity?</p>
+  <div class="moving-gif"><img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Pikachu"></div>
+  <button class="right" data-character="pikachu">Pikachu ⚡</button>
+  <button class="wrong">SpongeBob 🍍</button>
+  <button class="wrong">Shinchan 🍑</button>
+</div>
+
+<!-- =========================
+     SCREEN 7 - FUN FACT AFTER Q3
+     ========================= -->
+<div id="screen7" class="screen">
+  <h2>🧠 Fun Fact!</h2>
+  <p>Pikachu is one of the cutest and strongest Pokémon 💛</p>
+  <button class="next">Final Surprise 🎁</button>
+</div>
+
+<!-- =========================
+     SCREEN 8 - FINAL CELEBRATION
+     ========================= -->
+<div id="screen8" class="screen">
+  <h1 id="finalText">🎉 You did it! 🎂💖✨</h1>
+  <div class="you-win"><img src="https://i.imgur.com/3ZQ3Z6F.png" alt="You Win Badge"></div>
+  <p>Score: <span id="scoreDisplay">0</span></p>
+  <button id="celebrateBtn">Play Celebration 🎵</button>
+</div>
+
+<!-- JS Files -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
